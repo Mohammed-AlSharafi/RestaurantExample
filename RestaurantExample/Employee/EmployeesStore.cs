@@ -1,6 +1,6 @@
 ﻿namespace RestaurantExample
 {
-    class EmployeesList : IEmployeesList
+    class EmployeesStore : IEmployeesStore
     {
         public List<IEmployee> GetEmployees()
         {

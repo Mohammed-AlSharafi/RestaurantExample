@@ -13,8 +13,8 @@ namespace RestaurantExample
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterType<EmployeesList>().As<IEmployeesList>();
-            builder.RegisterType<Restaurant>().As<IRestaurant>();
+            builder.RegisterType<EmployeesStore>().As<IEmployeesStore>();
+            builder.RegisterType<Restaurants>().As<IRestaurants>().WithParameter("name","Ahmed").WithParameter("rating", 5);
             builder.RegisterType<ChefModel>().As<IEmployee>();
             builder.RegisterType<WaiterModel>().As<IEmployee>();
             builder.RegisterType<ManagerModel>().As<IEmployee>();
