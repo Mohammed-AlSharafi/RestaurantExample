@@ -4,7 +4,7 @@
     {
         string Name { get; set; }
         int Rating { get; set; }
-        List<IEmployee> Employees { get; set; }
+        List<IEmployee> Employees { get; }
         void GetInfo();
     }
 }

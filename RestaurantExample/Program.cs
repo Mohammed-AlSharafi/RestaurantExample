@@ -10,7 +10,6 @@ using (var scope = container.BeginLifetimeScope())
     var List = scope.Resolve<TestClasses>();
     var res = scope.Resolve<IRestaurant>();
 
-    res.Employees = List.getEmployees().GetEmployees();
     res.Rating = 10;
     res.Name = "Sana'a Restaurant";
 
