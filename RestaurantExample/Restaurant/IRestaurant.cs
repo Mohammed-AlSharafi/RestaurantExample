@@ -1,6 +1,6 @@
 ﻿namespace RestaurantExample
 {
-    interface IRestaurant
+   public interface IRestaurant
     {
         string Name { get; set; }
         int Rating { get; set; }

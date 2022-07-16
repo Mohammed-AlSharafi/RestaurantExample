@@ -1,6 +1,6 @@
 ﻿namespace RestaurantExample
 {
-    enum Positions
+    public enum Positions
     {
         Waiter,
         Chef,

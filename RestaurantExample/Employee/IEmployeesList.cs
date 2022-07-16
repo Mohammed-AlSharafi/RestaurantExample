@@ -1,6 +1,6 @@
 ﻿namespace RestaurantExample
 {
-    interface IEmployeesList
+   public  interface IEmployeesList
     {
         List<IEmployee> GetEmployees();
     }

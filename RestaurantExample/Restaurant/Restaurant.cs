@@ -1,17 +1,17 @@
 ﻿namespace RestaurantExample
 {
-    class Restaurant : IRestaurant
+  public class Restaurants : IRestaurant
     {
         public string Name { get; set; }
         public int Rating { get; set; }
         public List<IEmployee> Employees { get; set; }
 
-        public Restaurant(string name, int rating, IEmployeesList employees)
-        {
-            Name = name;
-            Rating = rating;
-            Employees = employees.GetEmployees();
-        }
+        //public Restaurants(IEmployeesList employees)
+        //{
+        //    //Name = name;
+        //    //Rating = rating;
+        //    Employees = employees.GetEmployees();
+        //}
         public void GetInfo()
         {
             Console.WriteLine($"{Name} ({Rating}/10 Ratings)\nEmployees:");

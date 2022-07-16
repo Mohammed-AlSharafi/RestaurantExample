@@ -1,6 +1,6 @@
 ﻿namespace RestaurantExample
 {
-    interface IBadge
+    public interface IBadge
     {
         string GetEmployeeBadge(string fname, string lname, Positions position);
     }

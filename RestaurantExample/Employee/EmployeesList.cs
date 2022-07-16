@@ -1,7 +1,11 @@
 ﻿namespace RestaurantExample
 {
-    class EmployeesList : IEmployeesList
+   public class EmployeesList : IEmployeesList
     {
+        public EmployeesList()
+        {
+
+        }
         public List<IEmployee> GetEmployees()
         {
             return new List<IEmployee>()
