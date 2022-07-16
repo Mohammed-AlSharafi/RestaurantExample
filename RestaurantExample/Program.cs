@@ -1,7 +1,13 @@
-﻿using RestaurantExample;
+﻿using Autofac;
+using RestaurantExample;
 
 var container = ContainerConfig.Configure();
 
-IRestaurant restaurant = new Restaurant("Sana'a Restaurant", 10, new EmployeesList());
+using (var scope = container.BeginLifetimeScope())
+{
+    var employeeList = scope.Resolve<IEmployeesList>();
 
-restaurant.GetInfo();
+    IRestaurant restaurant = new Restaurant("Sana'a Restaurant", 10, employeeList);
+
+    restaurant.GetInfo();
+}

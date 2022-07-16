@@ -6,7 +6,7 @@
         public int Rating { get; set; }
         public List<IEmployee> Employees { get; set; }
 
-        public Restaurant(string name, int rating, EmployeesList employees)
+        public Restaurant(string name, int rating, IEmployeesList employees)
         {
             Name = name;
             Rating = rating;
